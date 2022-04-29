@@ -11,7 +11,7 @@ public class BlindcsApplication {
 
     @GetMapping("/helloworld")
     public String helloWorld() {
-        return "Hello World";
+        return "Hello World1";
     }
 
     public static void main(String[] args) {
@@ -21,7 +21,6 @@ public class BlindcsApplication {
         Test1 t1 = new Test1();
         System.out.println(t1.test());
     }
-
 
 }
 
