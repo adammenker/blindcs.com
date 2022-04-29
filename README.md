@@ -1,5 +1,5 @@
 # Overview of the project
----
+
 ##### Tech Stack/Tools:
 - Frontend: React
 - Backend: Spring Boot
@@ -11,7 +11,7 @@
 blindcs.com is designed to be an anonymous messaging board for students to make posts about anything computer science related (classes, internships, interviews, etc.).
 
 # How to get started!
----
+
 ### Setting up your environment
 ##### Step 0: Download all the tools you will need
 You will need to download VSCode and IntelliJ IDEA. For IntelliJ IDEA, it is important that you get the Ultimate Edition. Use the licensing provided by Mizzou (all students get the Ultimate Edition for free so follow IntelliJ's steps to do that). Downloading stuff often needs troubleshooting so I will try my best to help with that but since it is pretty specific to your computer, google searches will likely help more.
@@ -40,7 +40,7 @@ Furthermore, if it says you are running the 'Oracle' version you will need to sw
 You have officially set up everything and now all you have to do to start the frontend is run ```npm start```. To start the backend, open IntelliJ and navigate to the ```BlindcsApplication``` file inside ```blindcs/src/main/java/com.interviewprep.blindcs``` package. From here, simply click the green run arrow on the left side on the same line as the class name. This will start your server. Test this by going to 'localhost:8080/helloworld' and you will see a hello world message. This should set you up to then use the green run arrow on the top right of your editor and the red stop square. Whenever you click the green run arrow the server will start and whenever you click the red stop square the server will stop. The frontend client conveniently changes as you make changes to your code, but if you change the backend you must restart your server for your changes to be reflected.
 
 # How to contribute
----
+
 ### Writing code
 ##### Frontend
 When you are writing code for the frontend, you will only need to make changes to the files in the `/src` directory. If you need to install a dependency that will change your package.json file but no need to write anything in it because it will do it automatically.
