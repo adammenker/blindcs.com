@@ -23,7 +23,7 @@ git clone https://github.com/adammenker/blindcs.com.git
 ```
 
 ##### Step 2: Setup Frontend
-This step is very easy. Simply navigate to the ```/blindcs-frontend``` directory and run this command in your terminal:
+This step is very easy. First, go to https://nodejs.org/en/download/ and download the LTS version of node for whatever OS you are running on. Verify you have node installed by running ```node -v``` or ```node --version```. From here, simply navigate to the ```/blindcs-frontend``` directory and run this command in your terminal:
 ```
 npm start
 ```
