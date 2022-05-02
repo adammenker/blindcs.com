@@ -23,7 +23,7 @@ git clone https://github.com/adammenker/blindcs.com.git
 ```
 
 ##### Step 2: Setup Frontend
-This step is very easy. Simply navigate to the ```/blindcs-frontend``` directory and run this command in your terminal:
+This step is very easy. First, go to https://nodejs.org/en/download/ and download the LTS version of node for whatever OS you are running on. Verify you have node installed by running ```node -v``` or ```node --version```. From here, simply navigate to the ```/blindcs-frontend``` directory and run this command in your terminal:
 ```
 npm start
 ```
@@ -48,7 +48,9 @@ When you are writing code for the frontend, you will only need to make changes t
 When you are writing code for the backend, you will write the actual code in the `src/main/java` directory but we will also be writing tests for our code in the `src/test` directory
 
 ### Using git/GitHub
-It is paramount you understand how to use git if you are going to be a software engineer so I think you should watch some tutorials on youtube or read some documentation. The general flow of our app though will be to look at the task board and pick up a task from it. Once you have something you intend to work on, you will create a branch for that task (and that task alone, do not complete multiple tasks on the same branch). Once you have finished you task we will merge your branch back into its parent branch. This terminology will make sense once you learn about git. We will discuss how we are using git in more detail in the discord channel.
+It is paramount you understand how to use git if you are going to be a software engineer so you need to watch this tutorial if you intend to push changes: https://www.youtube.com/watch?v=3fUbBnN_H2c. The general flow of our app though will be to look at the task board and pick up a task from it. Once you have something you intend to work on, you will create a branch for that task (and that task alone, do not complete multiple tasks on the same branch). Once you have finished you task we will merge your branch back into its parent branch. This terminology will make sense once you learn about git. We will discuss how we are using git in more detail in the discord channel.
+
+Also, in GitHub, when you want to make a pull request, you must add an approver. This prevents people from changing the main codebase directly without someone reviewing thier code. When you want to make a pull request, assign me (adammenker) as the reviewer.
 
 ---
 I am excited to work on this project with you all. If you have any questions feel free to message in the discord. You don't need any experience whatsoever to contribute. If you want to contribute though, it will require you to teach yourself some things on your own such as JavaScript, React, Java, or Spring Boot with tutorials. This might be your first exposure to a large codebase and you will see a lot of files that you have no idea what they do. This is normal and alot of these are pre-generated files so the only files that you should be concerned with are the ones in the directories I mentioned above. Also, once again, since this is something I was concerned about when working on a large project for the first time, it is impossible to break the code for anyone else, feel free to make all the changes you want since I will have to approve everything before it is merged into the code base.
