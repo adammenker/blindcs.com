@@ -29,6 +29,12 @@ npm start
 ```
 This will start a local server for the frontend and any changes that you make to the code in the frontend directory will then be viewable to you alone in your browser.
 
+##### NECESSARY SASS VS CODE FRONT-END EXTENSIONS
+  - In VS Code go to the extensions section (Mac: Cmd + Shift + X, Windows: Ctrl + Shift + X)
+  - Search 'Sass' and install it
+  - Search 'Sass Live Compiler' and install it
+ 
+
 ##### Step 3: Setup Backend (recommended)
 If you are interested in contributing to the backend you will have to do this step but it is not necessary if you are only interested in the frontend. You can also decide at a later point to set up the backend and their will be no issues. This step must be done in IntelliJ IDEA.
 
