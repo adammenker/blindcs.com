@@ -26,14 +26,11 @@ export default class SearchBar extends Component {
 
   render() {
     return (
-      <div className="main">
-        <h1>React Search</h1>
-        <div className="search">
-          <input type="text" placeholder="Search"
-            onKeyDown={this._handleKeyDown}
-            onChange={this._handleChange}
-          />
-        </div>
+      <div className="search">
+        <input type="text" placeholder="Search"
+          onKeyDown={this._handleKeyDown}
+          onChange={this._handleChange}
+        />
       </div>
     );
   }
