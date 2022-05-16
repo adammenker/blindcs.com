@@ -22,12 +22,12 @@ public class AccountService {
     }
 
     public void addNewAccount(Account account) {
-        if (!checkIfUserInDB(account)) {
+        if (!checkIfAccountInDB(account)) {
             accountRepository.save(account);
         }
     }
 
-    public Boolean checkIfUserInDB(Account account) {
+    public Boolean checkIfAccountInDB(Account account) {
         if (this.checkIfUsernameInUse(account)) {
             throw new IllegalStateException("username taken");
         } else {
