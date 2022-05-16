@@ -1,5 +1,6 @@
 package com.interviewprep.blindcs.account;
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
@@ -13,6 +14,11 @@ class AccountRepositoryTest {
 
     @Autowired
     private AccountRepository testRepository;
+
+    @AfterEach
+    void tearDown() {
+        testRepository.deleteAll();
+    }
 
     @Test
     void Should_ReturnOneAccount_When_UsernameInDB() {
