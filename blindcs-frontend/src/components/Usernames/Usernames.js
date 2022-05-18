@@ -1,17 +1,25 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
+import UsernameView from "./UsernameView";
 
 export default function Usernames() {
     const [accounts, getAccounts] = useState("");
-    const url = "localhost:8080/api/v1/"
+    const url = "http://localhost:8080/api/v1/";
 
-    axios.get(`${url}account`)
-        .then((response) => {
-            const allAccounts = response.data.accounts.allAccounts;
-            getAccounts(allAccounts)
-        })
-        .catch(error => console.error(`Error: ${error}`));
+    useEffect(() => {
+        getAllAccounts();
+    }, []);
+
+    const getAllAccounts = () => {
+        axios.get(`${url}account`)
+            .then((response) => {
+                console.log(response)
+                const allAccounts = response.data;
+                getAccounts(allAccounts);
+            })
+            .catch(error => console.error(`Error: ${error}`));
+    }
     return (
-        <h1>{accounts.length}</h1>
+        <UsernameView accounts={accounts} />
     )
 }
