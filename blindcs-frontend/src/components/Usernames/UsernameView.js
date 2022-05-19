@@ -8,7 +8,6 @@ export default function UsernameView(props) {
         if (accounts.length > 0) {
             return (
                 accounts.map((account, index) => {
-                    console.log(account);
                     return (
                         <div className="username" key={account._id}>
                             <h3>{account.username}</h3>

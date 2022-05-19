@@ -13,7 +13,6 @@ export default function Usernames() {
     const getAllAccounts = () => {
         axios.get(`${url}account`)
             .then((response) => {
-                console.log(response)
                 const allAccounts = response.data;
                 getAccounts(allAccounts);
             })
