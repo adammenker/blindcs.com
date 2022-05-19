@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import SearchBar from './components/SearchBar/SearchBar';
+import Usernames from './components/Usernames/Usernames';
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
-          <SearchBar/>
+          <SearchBar />
+          <Usernames />
         </p>
         <a
           className="App-link"
