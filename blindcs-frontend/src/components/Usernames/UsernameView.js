@@ -9,7 +9,7 @@ export default function UsernameView(props) {
             return (
                 accounts.map((account, index) => {
                     return (
-                        <div className="username" key={account._id}>
+                        <div className="username" key={account.id}>
                             <h3>{account.username}</h3>
                         </div>
                     )
