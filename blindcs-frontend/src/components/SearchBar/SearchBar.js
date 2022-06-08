@@ -9,7 +9,7 @@ export default class SearchBar extends Component {
 
   _handleKeyDown = (e) => {
     // TODO: Update requests to correct endpoints
-    if (e.key == "Enter") {
+    if (e.key === "Enter") {
       axios
         .get('http://localhost:8080/api/v1/account', {
           searchText: e.target.value

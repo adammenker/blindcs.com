@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import '../src/styles/variables/main.scss';
 import SearchBar from './components/SearchBar/SearchBar';
 import Usernames from './components/Usernames/Usernames';
 
@@ -13,6 +13,7 @@ function App() {
           <SearchBar />
           <Usernames />
         </p>
+        <h1>Test</h1>
         <a
           className="App-link"
           href="https://reactjs.org"
