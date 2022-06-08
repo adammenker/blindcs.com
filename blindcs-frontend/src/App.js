@@ -13,7 +13,6 @@ function App() {
           <SearchBar />
           <Usernames />
         </p>
-        <h1>Test</h1>
         <a
           className="App-link"
           href="https://reactjs.org"
